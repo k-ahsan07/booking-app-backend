@@ -10,8 +10,8 @@ import useFetch from '../../hooks/useFetch';
 
 const Featured = () => {
   
-  const { data, loading, error } = useFetch(
-    "/hotels/countByCity?cities=Karachi,Lahore"
+  const { data, loading } = useFetch(
+    "/hotels/countByCity?cities=Karachi,Lahore,Hunza,Islamabad,Peshawar,Murree"
   );
   return (
     <div className="featured">
